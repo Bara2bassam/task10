@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 32px;
+    height: 50px;
+    border-radius: 21px;
+    border:1px solid #CCC;
+    background-color: aqua;
+    margin:100px auto;
+    position: relative;
+}
+section{
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top:10%;
+    left:30%;
+    animation: moving 2.5s infinite;
+}
+
+
+
+
+@keyframes moving {
+    0% {
+        opacity: 1;
+        top: 10px;
+    }
+    50% {
+        opacity: 0;
+        top: 20px;
+    }
+    100% {
+        opacity: 0;
+        top: 10px;
+        
+    }
+}
